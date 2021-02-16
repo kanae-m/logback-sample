@@ -1,0 +1,16 @@
+<configuration>
+
+  <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>log/application-${bySecond}.log</file>
+    <encoder>
+      <pattern>%logger{35} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="DEBUG">
+    <appender-ref ref="FILE"/>
+  </root>
+
+</configuration>

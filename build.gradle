@@ -1,0 +1,164 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task runLogback01(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback01.xml']
+}
+
+task runLogback02(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback02.xml']
+}
+
+task runLogback03(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback03.xml']
+}
+
+task runLogback04(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback04.xml']
+}
+
+task runLogback05(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback05.xml']
+}
+
+task runLogback06(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback06.xml']
+}
+
+task runLogback07(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback07.xml']
+}
+
+task runLogback08(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback08.xml']
+}
+
+task runLogback09(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback09.xml']
+}
+
+task runLogback10(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback10.xml', '-DLOG_DIR=log']
+}
+
+task runLogback11(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback11.xml']
+}
+
+task runLogback12(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback12.xml']
+}
+
+task runLogback13(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback13.xml']
+}
+
+task runLogback14(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback14.xml']
+}
+
+task runLogback15(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback15.xml']
+}
+
+task runLogback16(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback16.xml']
+}
+
+task runLogback17(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback17.xml']
+}
+
+task runLogback18(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback18.xml']
+}
+
+task runLogback19(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback19.xml']
+}
+
+task runLogback20(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback20.xml']
+}
+
+task runLogback21(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback21.xml']
+}
+
+task runLogback22(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback22.xml']
+}
+
+task runLogback23(type: JavaExec) {
+    main = "com.example.sample01.Main"
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dlogback.configurationFile=conf/logback23.xml']
+}
